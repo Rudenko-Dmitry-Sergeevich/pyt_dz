@@ -23,5 +23,5 @@ with open('firm.txt', 'r', encoding='utf-8') as firm_f:
     firm_dick = [firm_profit, {'average_profit': average_profit}]
     print(firm_dick)
 import json
-with open('firm_json.txt', 'w', encoding='utf-8') as firm_f:
+with open('firm_json.json', 'w', encoding='utf-8') as firm_f:
     json.dump(firm_dick, firm_f)
