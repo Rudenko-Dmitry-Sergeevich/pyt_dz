@@ -2,7 +2,7 @@
 # Построчно записать фамилии сотрудников и величину их окладов (не менее 10 строк).
 # Определить, кто из сотрудников имеет оклад менее 20 тысяч, вывести фамилии этих сотрудников.
 # Выполнить подсчёт средней величины дохода сотрудников.
-with open('workers.txt') as worker_list:
+with open('workers.txt', 'r', encoding='utf-8') as worker_list:
     worker_str = (i.split() for i in worker_list)
     worker_dict = {a[0]: a[1] for a in worker_str}
     print(f'перевел строки из файла в словарь: {worker_dict}')

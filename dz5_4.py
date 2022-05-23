@@ -11,6 +11,6 @@ with open('numbers.txt', 'r', encoding='utf-8') as my_f:
     y = 0
     x = ['один', 'два', 'три', 'четыре']
     for i in my_f:
-        numbers_rus.write(f'{x[y]} {i[len(i.split()[0]):]}\n')
+        numbers_rus.write(f'{x[y]} {i[len(i.split()[0]):]}')
         y += 1
 numbers_rus.close()
